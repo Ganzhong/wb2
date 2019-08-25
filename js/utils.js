@@ -41,7 +41,59 @@ function doinput(allinput,childinput){
 					break;
 				}
 			}
+			var totalcost = 0;
+			var totalcost2 = 0;
+			for (let i = 0; i < list.length; i++) {
+				if ($(mlist[i]).prop('checked')) {
+					if (!(i%2==0)) {
+						totalcost+=Number(list[i].parentNode.children[7].innerText);
+						$('.mpaycost span:nth-of-type(2)')[0].innerText =totalcost;
+					}
+				}else{
+					totalcost2++;
+					if (totalcost2 ==list.length) {
+						$('.mpaycost span:nth-of-type(2)')[0].innerText =0;
+					}
+
+				}
+			}
 		}
 		
 	}
 }
+var count = 0; 
+var price = 0;
+var a = "";
+function countchange(leastr,addstr,list){
+  var mulxqlist = document.querySelectorAll(list);
+  for (let i = 0; i < mulxqlist.length; i++) {
+    mulxqlist[i].onclick = function(eve) {
+      var e = eve || event;
+      var target = e.target || e.srcElement;
+      if (target.className == leastr) {
+      price = Number(target.parentNode.parentNode.children[4].innerText); //找位置
+        a = target.nextElementSibling.innerText;//找位置
+        count = a*1;
+       if (count ==1) {
+        count  =1;
+       }else{
+        count--;
+       }
+       target.parentNode.nextElementSibling.nextElementSibling.innerText = price*count //找位置
+       target.nextElementSibling.innerText=count;//找位置
+     
+      }
+      if (target.className == addstr) {
+        a = target.parentNode.children[1].innerText;
+        price = Number(target.parentNode.nextElementSibling.nextElementSibling.innerText);
+		count = a*1;
+		price/=count;
+        count++;
+          target.parentNode.children[1].innerText=count;
+          target.parentNode.nextElementSibling.nextElementSibling.innerText = price*count;
+      }
+  
+    };
+  }
+}
+  

@@ -190,9 +190,24 @@ body {
   width: 100%;
   font-size: 12px;
 }
+.costfuhao {
+  display: block;
+  height: 88px;
+  float: left;
+}
+
 .cost {
   display: block;
-  /* margin-left: 66px; */
+  height: 88px;
+  float: left;
+}
+.cost2fuhao {
+  display: block;
+  height: 88px;
+  float: left;
+}
+.cost2 {
+  display: block;
   height: 88px;
   float: left;
 }
