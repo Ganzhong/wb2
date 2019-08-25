@@ -17,8 +17,11 @@
     <title>万表网</title>
     <link rel="shortcut icon" href="img/bitbug_favicon.ico" />
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"> -->
     <link rel="stylesheet" href="css/shopcar.css">
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/shopcar.js"></script>
 
 </head>
 
@@ -72,7 +75,7 @@
     </div>
     <div class="mcontent3 w clearfix">
         <div class="mlisttitle w clearfix">
-            <input type="checkbox">
+            <input type="checkbox" class="allcheckbox"  value="allcheckbox123">
             <span>全选</span>
             <span>商品信息</span>
             <span>单价</span>
@@ -81,10 +84,72 @@
             <span>操作</span>
         </div>
         <div class="mdetail clearfix">
-            <ul>
-                <li>
+            <ul class="mulxq clearfix">
+                <li class="clearfix">
+                    <div class="clearfix">
+                        <input id="mcheckbox" class="mcheckbox" name="mcheckbox1" type="checkbox">
+                        <span>法国赫柏林旗舰店</span>
+                    </div>
+                    <div class="clearfix">
+                        <span>满减</span>
+                        <span> 开学季,每满1000减100</span>
+
+                    </div>
+                    <div class="mlistdetail w">
+                        <input class="mcheckbox" name="mcheckbox2" type="checkbox">
+                        <img src="img/ganwb01.jpg" alt="">
+                        <div class="mxq">
+                            <span>瑞士艺术制表大师爱保时(EPOS)-Emotion...</span><br>
+                            <span>真皮蓝色牛皮</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="madd">
+                            <i class="maddspan1">-</i>
+                            <span class="maddspan2">2</span>
+                            <span class="maddspan3">+</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="mdo">
+                            <a href="#">删除</a><br>
+                            <a href="#">移入收藏</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="clearfix">
+                    <div class="clearfix">
+                        <input id="mcheckbox" class="mcheckbox" name="mcheckbox1" type="checkbox">
+                        <span>法国赫柏林旗舰店</span>
+                    </div>
+                    <div class="clearfix">
+                        <span>满减</span>
+                        <span> 开学季,每满1000减100</span>
+
+                    </div>
+                    <div class="mlistdetail w">
+                        <input class="mcheckbox" name="mcheckbox2" type="checkbox">
+                        <img src="img/ganwb01.jpg" alt="">
+                        <div class="mxq">
+                            <span>瑞士艺术制表大师爱保时(EPOS)-Emotion...</span><br>
+                            <span>真皮蓝色牛皮</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="madd">
+                            <span class="maddspan1">-</span>
+                            <span class="maddspan2">2</span>
+                            <span class="maddspan3">+</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="mdo">
+                            <a href="#">删除</a><br>
+                            <a href="#">移入收藏</a>
+                        </div>
+                    </div>
+
+                </li>
+                <!-- <li class="clearfix">
                     <div>
-                        <input id="mcheckbox" type="checkbox">
+                        <input id="mcheckbox" class="mcheckbox" name="mcheckbox1" type="checkbox">
                         <span>法国赫柏林旗舰店</span>
                     </div>
                     <div>
@@ -93,7 +158,7 @@
 
                     </div>
                     <div class="mlistdetail w">
-                        <input type="checkbox">
+                        <input class="mcheckbox" name="mcheckbox2" type="checkbox">
                         <img src="img/ganwb01.jpg" alt="">
                         <div class="mxq">
                             <span>瑞士艺术制表大师爱保时(EPOS)-Emotion...</span><br>
@@ -101,14 +166,110 @@
                         </div>
                         <span class="cost">￥5460</span>
                         <div class="madd">
-                            <span>-</span>
-                            <span>2</span>
-                            <span>+</span>
-                            
-                            这是++和--</div>
+                            <span class="maddspan1">-</span>
+                            <span class="maddspan2">2</span>
+                            <span class="maddspan3">+</span>
+                        </div>
                         <span class="cost">￥5460</span>
                         <div class="mdo">
-                            <a href="#">删除</a>
+                            <a href="#">删除</a><br>
+                            <a href="#">移入收藏</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="clearfix">
+                    <div>
+                        <input id="mcheckbox" class="mcheckbox" name="mcheckbox1" type="checkbox">
+                        <span>法国赫柏林旗舰店</span>
+                    </div>
+                    <div>
+                        <span>满减</span>
+                        <span> 开学季,每满1000减100</span>
+
+                    </div>
+                    <div class="mlistdetail w">
+                        <input class="mcheckbox" name="mcheckbox2" type="checkbox">
+                        <img src="img/ganwb01.jpg" alt="">
+                        <div class="mxq">
+                            <span>瑞士艺术制表大师爱保时(EPOS)-Emotion...</span><br>
+                            <span>真皮蓝色牛皮</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="madd">
+                            <span class="maddspan1">-</span>
+                            <span class="maddspan2">2</span>
+                            <span class="maddspan3">+</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="mdo">
+                            <a href="#">删除</a><br>
+                            <a href="#">移入收藏</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="clearfix">
+                    <div>
+                        <input id="mcheckbox" class="mcheckbox" name="mcheckbox1" type="checkbox">
+                        <span>法国赫柏林旗舰店</span>
+                    </div>
+                    <div>
+                        <span>满减</span>
+                        <span> 开学季,每满1000减100</span>
+
+                    </div>
+                    <div class="mlistdetail w">
+                        <input class="mcheckbox" name="mcheckbox2" type="checkbox">
+                        <img src="img/ganwb01.jpg" alt="">
+                        <div class="mxq">
+                            <span>瑞士艺术制表大师爱保时(EPOS)-Emotion...</span><br>
+                            <span>真皮蓝色牛皮</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="madd">
+                            <span class="maddspan1">-</span>
+                            <span class="maddspan2">2</span>
+                            <span class="maddspan3">+</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="mdo">
+                            <a href="#">删除</a><br>
+                            <a href="#">移入收藏</a>
+                        </div>
+                    </div>
+
+                </li> -->
+            </ul>
+        </div>
+        <!-- <div class="mdetail clearfix"> 
+            <ul>
+                <li>
+                    <div>
+                        <input id="mcheckbox" class="mcheckbox" name="mcheckbox3" type="checkbox">
+                        <span>法国赫柏林旗舰店</span>
+                    </div>
+                    <div>
+                        <span>满减</span>
+                        <span> 开学季,每满1000减100</span>
+
+                    </div>
+                    <div class="mlistdetail w">
+                        <input class="mcheckbox" name="mcheckbox4" type="checkbox">
+                        <img src="img/ganwb01.jpg" alt="">
+                        <div class="mxq">
+                            <span>瑞士艺术制表大师爱保时(EPOS)-Emotion...</span><br>
+                            <span>真皮蓝色牛皮</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="madd">
+                            <span class="maddspan1">-</span>
+                            <span class="maddspan2">2</span>
+                            <span class="maddspan3">+</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="mdo">
+                            <a href="#">删除</a><br>
                             <a href="#">移入收藏</a>
                         </div>
                     </div>
@@ -116,9 +277,44 @@
                 </li>
             </ul>
         </div>
+        <div class="mdetail clearfix">
+            <ul>
+                <li>
+                    <div>
+                        <input id="mcheckbox" class="mcheckbox" name="mcheckbox3" type="checkbox">
+                        <span>法国赫柏林旗舰店</span>
+                    </div>
+                    <div>
+                        <span>满减</span>
+                        <span> 开学季,每满1000减100</span>
+
+                    </div>
+                    <div class="mlistdetail w">
+                        <input class="mcheckbox" name="mcheckbox4" type="checkbox">
+                        <img src="img/ganwb01.jpg" alt="">
+                        <div class="mxq">
+                            <span>瑞士艺术制表大师爱保时(EPOS)-Emotion...</span><br>
+                            <span>真皮蓝色牛皮</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="madd">
+                            <span class="maddspan1">-</span>
+                            <span class="maddspan2">2</span>
+                            <span class="maddspan3">+</span>
+                        </div>
+                        <span class="cost">￥5460</span>
+                        <div class="mdo">
+                            <a href="#">删除</a><br>
+                            <a href="#">移入收藏</a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>  -->
 
         <div class="mallcheck w clearfix">
-            <input type="checkbox">
+            <input type="checkbox" class="allcheckbox" name="allcheckbox">
             <span><a href="#">全选</a></span>
             <span><a href="#">删除</a></span>
             <span><a href="#">移入收藏</a></span>
@@ -131,6 +327,7 @@
             <span>结算</span>
         </div>
     </div>
+    <hr>
     <div class="mpayafter w">
         <a href="#">
             <span>正</span>
