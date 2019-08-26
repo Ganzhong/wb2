@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-24 10:53:04
- * @LastEditTime: 2019-08-24 18:19:33
+ * @LastEditTime: 2019-08-26 21:42:19
  * @LastEditors: Please set LastEditors
  https://www.wbiao.cn/index.html
  D:修改了东西
@@ -22,6 +22,7 @@
     <script src="lib/jquery/jquery.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/shopcar.js"></script>
+    <script src="js/network.js"></script>
 
 </head>
 
@@ -85,10 +86,10 @@
         </div>
         <div class="mdetail clearfix">
             <ul class="mulxq clearfix">
-                <li class="clearfix mli">
+                <li class="clearfix mli" style="display: none">
                     <div class="clearfix">
                         <input id="mcheckbox" class="mcheckbox" name="mcheckbox1" type="checkbox">
-                        <span>法国赫柏林旗舰店</span>
+                        <span class="mstorename">法国赫柏林旗舰店</span>
                     </div>
                     <div class="clearfix">
                         <span>满减</span>
@@ -103,14 +104,14 @@
                             <span>真皮蓝色牛皮</span>
                         </div>
                         <span class="costfuhao">￥</span>
-                        <span class="cost">60</span>
+                        <span class="cost">0</span>
                         <div class="madd">
                             <i class="maddspan1">-</i>
                             <span class="maddspan2">1</span>
                             <span class="maddspan3">+</span>
                         </div>
                         <span class="cost2fuhao">￥</span>
-                        <span class="cost2">60</span>
+                        <span class="cost2">0</span>
                         <div class="mdo">
                             <a href="#">删除</a><br>
                             <a href="#">移入收藏</a>
@@ -118,73 +119,6 @@
                     </div>
 
                 </li>
-                <li class="clearfix mli">
-                    <div class="clearfix">
-                        <input id="mcheckbox" class="mcheckbox" name="mcheckbox1" type="checkbox">
-                        <span>法国赫柏林旗舰店</span>
-                    </div>
-                    <div class="clearfix">
-                        <span>满减</span>
-                        <span> 开学季,每满1000减100</span>
-
-                    </div>
-                    <div class="mlistdetail w">
-                        <input class="mcheckbox" name="mcheckbox2" type="checkbox">
-                        <img src="img/ganwb01.jpg" alt="">
-                        <div class="mxq">
-                            <span>瑞士艺术制表大师爱保时(EPOS)-Emotion...</span><br>
-                            <span>真皮蓝色牛皮</span>
-                        </div>
-                        <span class="costfuhao">￥</span>
-                        <span class="cost">5460</span>
-                        <div class="madd">
-                            <i class="maddspan1">-</i>
-                            <span class="maddspan2">1</span>
-                            <span class="maddspan3">+</span>
-                        </div>
-                        <span class="cost2fuhao">￥</span>
-                        <span class="cost2">5460</span>
-                        <div class="mdo">
-                            <a href="#">删除</a><br>
-                            <a href="#">移入收藏</a>
-                        </div>
-                    </div>
-
-                </li>
-                <li class="clearfix mli">
-                    <div class="clearfix">
-                        <input id="mcheckbox" class="mcheckbox" name="mcheckbox1" type="checkbox">
-                        <span>法国赫柏林旗舰店</span>
-                    </div>
-                    <div class="clearfix">
-                        <span>满减</span>
-                        <span> 开学季,每满1000减100</span>
-
-                    </div>
-                    <div class="mlistdetail w">
-                        <input class="mcheckbox" name="mcheckbox2" type="checkbox">
-                        <img src="img/ganwb01.jpg" alt="">
-                        <div class="mxq">
-                            <span>瑞士艺术制表大师爱保时(EPOS)-Emotion...</span><br>
-                            <span>真皮蓝色牛皮</span>
-                        </div>
-                        <span class="costfuhao">￥</span>
-                        <span class="cost">50</span>
-                        <div class="madd">
-                            <i class="maddspan1">-</i>
-                            <span class="maddspan2">1</span>
-                            <span class="maddspan3">+</span>
-                        </div>
-                        <span class="cost2fuhao">￥</span>
-                        <span class="cost2">50</span>
-                        <div class="mdo">
-                            <a href="#">删除</a><br>
-                            <a href="#">移入收藏</a>
-                        </div>
-                    </div>
-
-                </li>
-           
             </ul>
         </div>
         <div class="mallcheck w clearfix">

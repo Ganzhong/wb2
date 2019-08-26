@@ -14,6 +14,7 @@ body {
   text-align: center;
   line-height: 60px;
 }
+
 .mlogin {
   width: 100%;
   height: 26px;
@@ -45,22 +46,21 @@ body {
   box-sizing: border-box;
   float: left;
 }
+
 .mulprogress li {
   margin-left: 100px;
   float: left;
 }
 .line {
   position: absolute;
-  left: 0;
-  top: 38px;
+  left: -1px;
+  top: 39px;
   z-index: -1;
   height: 1px;
   background: #eeeeee;
-  width: 474px;
+  width: 450px;
   margin: 0 auto;
   margin-left: 128px;
-  /* background: blue;
-  text-align: center;  */
 }
 .no {
   width: 16px;
@@ -72,14 +72,17 @@ body {
   /* background: red; */
 }
 .i_no {
-  border: 3px solid #ccc;
-  width: 16px;
-  height: 16px;
-  /* background: white; */
+  border: 2px solid #ccc;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto;
-  /* background: red; */
+  padding: 0 0;
+  margin: 3px auto;
+}
+h5{
+  font-weight: bolder;
+  font-size: 14px;
 }
 .mtishi {
   height: 30px;
@@ -111,30 +114,29 @@ body {
   margin-left: 86px;
 }
 .mlisttitle span:nth-of-type(3) {
-  margin-left: 276px;
+  margin-left: 190px;
 }
 .mlisttitle span:nth-of-type(4) {
   margin-left: 110px;
 }
 .mlisttitle span:nth-of-type(5) {
-  margin-left: 110px;
+  margin-left: 140px;
 }
 .mlisttitle span:nth-of-type(6) {
-  margin-left: 110px;
+  margin-left: 160px;
 }
 
 .mdetail {
-  /* display: none; */
   overflow: hidden;
- 
-  /* padding-bottom: 20px;
-  margin-bottom: 20px; */
 }
 .mdetail ul li{
   margin-bottom: 20px;
   border: 1px solid #ccc;
    
    padding-bottom: 20px;
+}
+.mstorename{
+  font-weight: bolder;
 }
 #mcheckbox {
   margin-left: 16px;
@@ -144,6 +146,7 @@ body {
   height: 44px;
   border-bottom: 1px solid #ccc;
   line-height: 44px;
+  background: #F5F5F5;
   /* background: #99AED9; */
 }
 .mdetail div:nth-child(2) span:nth-child(1) {
@@ -185,6 +188,7 @@ body {
   height: 88px;
   float: left;
 }
+
 .mxq span {
   display: inline-block;
   width: 100%;
@@ -244,12 +248,12 @@ body {
   border: 1px solid #ccc;
 }
 .mdo {
-  width: 56px;
+  width: 100px;
   /* background: #99aed9; */
   height: 88px;
-  margin-left: 100px;
+  margin-right: 20px;
   text-align: center;
-  float: left;
+  float: right;
 }
 .mallcheck {
   height: 60px;
