@@ -28,7 +28,7 @@ $sql = "CREATE TABLE wb_list (
 			wb_title VARCHAR(300) NOT NULL,
 			wb_detail VARCHAR(30) NOT NULL,
 			wb_name VARCHAR(30) NOT NULL,
-			wb_img VARCHAR(30) NOT NULL,
+			wb_img VARCHAR(300) NOT NULL,
 			wb_caizhi VARCHAR(30) NOT NULL,
 			wb_price VARCHAR(30) NOT NULL,
 			wb_num VARCHAR(30) NOT NULL,

@@ -2,9 +2,10 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-26 08:53:29
- * @LastEditTime: 2019-08-26 22:42:40
+ * @LastEditTime: 2019-08-27 14:46:24
  * @LastEditors: Please set LastEditors
  */
+// import * as del from './network';
 var list;
 var mlist;
 function doinput(allcheckbox, mcheckbox) {
@@ -106,6 +107,16 @@ function countchange(leastr, addstr, mlilist) {
 			  price * count;
 			  taketotalcost(); //拿到总额
       }
+      if (target.innerHTML == "删除") {
+        //根据id删除数据库
+        var msetid = target.nextElementSibling.nextElementSibling.innerText;
+        console.log(msetid)
+        deldata(msetid);//删除数据库
+        target.parentNode.parentNode.parentNode.parentNode.removeChild(target.parentNode.parentNode.parentNode); //删除样式
+        if ((jQuery.parseJSON(showlist()).datalist[0]) == null) {
+         
+        }
+      }
     };
   }
 }
@@ -124,6 +135,7 @@ function init(arrlist) {
   $(".cost")[0].innerText = arrlist.wb_price;
   $(".cost2")[0].innerText = arrlist.wb_price * arrlist.wb_num;
   $(".maddspan2")[0].innerText = arrlist.wb_num;
+  $(".msetid")[0].innerText = arrlist.wb_id;//设置id 删除时用
 }
 
 function array_diff(a, b) {
