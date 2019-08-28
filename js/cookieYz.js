@@ -5,8 +5,10 @@
  * @LastEditTime: 2019-08-27 19:21:23
  * @LastEditors: Please set LastEditors
  */
+var yhm=document.getElementById("yhm2");
 
 function getCookie2() {
+	// var yhm=document.getElementById("yhm");
 		    var decodedCookie = decodeURIComponent(document.cookie);
 		    
 		    var ca = decodedCookie.split(';');
@@ -18,7 +20,7 @@ function getCookie2() {
 					c=c[0];
 					console.log(c);
 					var xhr=new XMLHttpRequest;
-					xhr.open("POST","http://localhost/wb/php/ck.php");
+					xhr.open("POST","./php/ck.php");
 					xhr.setRequestHeader('content-type',"application/x-www-form-urlencoded");
 					xhr.send("username="+c);
 					
@@ -26,8 +28,11 @@ function getCookie2() {
 					xhr.onreadystatechange=function(){
 						if(xhr.readyState==4&&xhr.status==200){
 							var result=xhr.responseText;
-							if(result==1){
-								location.href="http://localhost/wb2/index.html";
+							if(result!=0){
+								// console.log(yhm)
+								// console.log(result);
+								yhm.innerHTML="欢迎您"+" "+result;
+								// location.href="http://localhost/wb2/index.html";
 							}
 							
 						}

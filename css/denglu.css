@@ -142,6 +142,9 @@
 	font-size: 12px;color: #999999;
 	cursor: pointer;text-decoration: none;
 }
+#mfzc2 {
+	padding: 0px;margin-top: 29px;
+}
 
 /* 扫码登录 */
 .lsmdl{

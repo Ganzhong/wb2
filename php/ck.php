@@ -16,7 +16,7 @@
 		$row = mysqli_num_rows($result);
 		if($row>0){
 			
-			echo 1;
+			echo $name2 ;
 		}else{
 			echo 0;
 		}

@@ -87,7 +87,8 @@ downloadApp.onclick=function(){
 				if(result==1&&res==true){
 					dlts.style.display="none";
 					console.log("登录成功");
-					location.href="./index1.html";
+					// location.href="../index1.html";
+					location.replace("./index1.html")
 				}else{
 					console.log("登录失败");
 					dlts.style.display="block";

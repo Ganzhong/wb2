@@ -127,16 +127,16 @@ var f1=false,f2=false,f3=false,f4=false,f5=false;
 				if(xhr.readyState==4&&xhr.status==200){
 					var result=xhr.responseText;
 					console.log(xhr.responseText);
-					
+					location.href="./denglu.html";	
 				}
 			}
 			
 			
 			
 			setCookie(Nmobi, " ", 10);
-			 window.location.href="../denglu.html";	
+			 
 		}else{
-			console.log("请输入正确信息")
+			console.log("请输入正确信息");
 		}
 		
 		
