@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-26 08:53:29
- * @LastEditTime: 2019-08-27 14:46:24
+ * @LastEditTime: 2019-08-28 09:52:26
  * @LastEditors: Please set LastEditors
  */
 // import * as del from './network';
@@ -41,18 +41,24 @@ function doinput(allcheckbox, mcheckbox) {
           i++;
         }
       }
-      for (let i = 0; i < list.length; i++) {
+      var len = jQuery.parseJSON(showlist()).datalist.length;
+      for (let i = 0; i < len*2; i++) {
         if ($(mlist[i]).prop("checked")) {
           $(allcheckbox).prop({ checked: true });
         } else {
           $(allcheckbox).prop({ checked: false });
-          break;
+          // break;
         }
       }
       taketotalcost();
     };
   }
 }
+// function checkboxAll(chname) {
+// 	jQuery("[name='" + chname + "']").each(function() {
+// 		jQuery(this).attr("checked", true);
+// 	});
+// }
 function taketotalcost() {
   var totalcost = 0;
   var total = 0;
@@ -113,8 +119,12 @@ function countchange(leastr, addstr, mlilist) {
         console.log(msetid)
         deldata(msetid);//删除数据库
         target.parentNode.parentNode.parentNode.parentNode.removeChild(target.parentNode.parentNode.parentNode); //删除样式
-        if ((jQuery.parseJSON(showlist()).datalist[0]) == null) {
-         
+        console.log(jQuery.parseJSON(showlist()).datalist[0]);
+        if(jQuery.parseJSON(showlist()).datalist[0] == null){ 
+          $('.mcontent2')[0].style = 'display:none';
+          $('.mcontent3')[0].style = 'display:none';
+          $('.shopnull')[0].style = "display: block";
+
         }
       }
     };

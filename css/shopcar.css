@@ -257,7 +257,7 @@ cursor: pointer;
 .mallcheck span:nth-of-type(1) {
   margin-left: 22px;
 }
-.mallcheck span:nth-of-type(2) {
+.mallcheck>span:nth-of-type(2) {
   margin-left: 28px;
 }
 .mallcheck span:nth-of-type(3) {
@@ -275,13 +275,28 @@ cursor: pointer;
   width: 180px;
   height: 60px;
   background: red;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .mpaycost {
   display: inline-block;
-  width: 254px;
+  width: 130px;
+  margin-left: 124px;
   text-align: right;
   line-height: 15px;
+}
+.mpaycost span:nth-of-type(1){
+  float: left;
+}
+.mpaycost > span:nth-of-type(2){
+  float: left;
+  text-align: left;
+  color: red;
+
+
 }
 .mpayafter {
   display: flex;
