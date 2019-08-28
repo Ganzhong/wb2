@@ -134,7 +134,7 @@ var f1=false,f2=false,f3=false,f4=false,f5=false;
 			
 			
 			setCookie(Nmobi, " ", 10);
-			 window.location.href="http://localhost/wb2/denglu.html";	
+			 window.location.href="../denglu.html";	
 		}else{
 			console.log("请输入正确信息")
 		}

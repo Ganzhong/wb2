@@ -9,6 +9,7 @@
 
  
 $(function () {
+	// createwbiao();
   var obj = jQuery.parseJSON(showlist());
   var newlist = [];
   var datalist = obj.datalist;
