@@ -168,7 +168,7 @@ h5{
 }
 .mlistdetail img {
   margin: 0 25px;
-  height: 90px;
+  /* height: 90px; */
   width: 68px;
   float: left;
 }

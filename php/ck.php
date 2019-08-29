@@ -1,4 +1,6 @@
 <?php
+// error_reporting(E_ERROR); //忽略警告显示
+ini_set("display_errors","Off");
 	header('Content-type:text/html;charset=utf-8');
 	header('Access-Control-Allow-Origin:*');
 	//获取用户提交的数据
@@ -6,7 +8,7 @@
 	$conn = mysqli_connect('localhost','root','root','wbiao',3306);
 	//检查连接是否有问题
 	if(mysqli_connect_error()){
-		echo "fail";
+		echo "请登录";
 	}else{
 		//连接成功
 		$sql = "SELECT * FROM info WHERE name='$name2' ";

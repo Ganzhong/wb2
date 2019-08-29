@@ -405,12 +405,12 @@ li {
 #banner>ul>li {
 	position: absolute;
 	opacity: 0;
-	filter: alpha(opacity: 0);
+	filter: alpha(opacity=0);
 }
 
 #banner>ul>li:nth-child(1) {
 	opacity: 1;
-	filter: alpha(opacity: 100);
+	filter: alpha(opacity=100);
 }
 
 #banner>ul>li>img {

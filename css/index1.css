@@ -1,4 +1,4 @@
-//头部
+/* //头部 */
 
 #top {
 	height: 28px;
@@ -129,7 +129,7 @@
 	float: right;
 }
 
-//导航
+/* //导航 */
 #nav {
 	height: 48px;
 	position: relative;
@@ -206,7 +206,7 @@
 	height: 460px;
 	background: #918C92;
 	position: absolute;
-	top: 191px;
+	top: 48px;
 	/*display: none;*/
 	z-index: 999;
 }
@@ -406,12 +406,12 @@ li {
 #banner>ul>li {
 	position: absolute;
 	opacity: 0;
-	filter: alpha(opacity: 0);
+	filter: alpha(opacity= 0);
 }
 
 #banner>ul>li:nth-child(1) {
 	opacity: 1;
-	filter: alpha(opacity: 100);
+	filter: alpha(opacity=100);
 }
 
 #banner>ul>li>img {
@@ -507,6 +507,7 @@ li {
 				font-size: 20px;
 				color: #4a4a4a;
 				float: left;
+				font-weight: 900;
 			}
 
 			.lttop h3 {
@@ -525,7 +526,18 @@ li {
 			.lt-mid,
 			.lt-right {
 				float: left;
+				
 			}
+			.lt-left:hover{
+				box-shadow:4px 4px 6px #666666;
+			}
+			.lt-mid p:hover{
+				box-shadow:4px 4px 6px #666666;
+			}
+			.lt-right p:hover{
+				box-shadow:4px 4px 6px #666666;
+			}
+			
 			.lt-mid,
 			.lt-right {
 				margin-left: 12px;
@@ -563,7 +575,7 @@ li {
 
 .main11-c>a{
 	float: left;
-	background: ;
+	/* background: ; */
 	width: 72px;
 	height: 28px;
 	
@@ -625,7 +637,9 @@ li {
 	
 }
 
-
+.main11-div div a img:hover{
+	box-shadow:6px 2px 6px #666666;
+}
 
 
 

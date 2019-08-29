@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-09 18:59:41
- * @LastEditTime: 2019-08-27 09:59:07
+ * @LastEditTime: 2019-08-29 15:02:37
  * @LastEditors: Please set LastEditors
  */
 function showlist() {
@@ -29,6 +29,14 @@ function createwbiao() {
         //建表
         $.ajax({
           url: "http://localhost/wb2/interface/model/create_wbtable.php",
+          success: function(data) {
+            // console.log(data); //拿到返回的数据
+          }
+        });
+      
+        //建表用户名密码
+        $.ajax({
+          url: "http://localhost/wb2/interface/model/create_wbtable2.php",
           success: function(data) {
             // console.log(data); //拿到返回的数据
           }
