@@ -10,7 +10,7 @@ function showlist() {
   //查数据
   $.ajax({
     async: false,//同步(true 默认)，异步(false)
-    url: "http://10.36.149.95:8080/wb2/interface/showlist.php", //请求的服务端地址
+    url: "http://localhost/wb2/interface/showlist.php", //请求的服务端地址
     success: function (data) {
       result = data;
     }
@@ -22,13 +22,13 @@ function showlist() {
 function createwbiao() { 
         //建数据库
         $.ajax({
-          url: "http://10.36.149.95:8080/wb2/interface/model/create_wbdatabase.php",
+          url: "http://localhost/wb2/interface/model/create_wbdatabase.php",
           success: function(data) {
           }
         });
         //建表
         $.ajax({
-          url: "http://10.36.149.95:8080/wb2/interface/model/create_wbtable.php",
+          url: "http://localhost/wb2/interface/model/create_wbtable.php",
           success: function(data) {
             // console.log(data); //拿到返回的数据
           }
@@ -39,7 +39,7 @@ function createwbiao() {
 function adddata() {
   //'添加数据'
   $.ajax({
-    url: "http://10.36.149.95:8080/wb2/interface/addwb.php",
+    url: "http://localhost/wb2/interface/addwb.php",
     data: {
       // VALUES ('$id','$title','$detail','$name','$img','$caizhi','$price','$remark')";
       id: 2,
@@ -61,7 +61,7 @@ function adddata() {
 
  function deldata(id) {
   $.ajax({
-    url: "http://10.36.149.95:8080/wb2/interface/delwb.php", //请求的服务端地址
+    url: "http://localhost/wb2/interface/delwb.php", //请求的服务端地址
     data: {
       id: id
     },
@@ -75,7 +75,7 @@ function adddata() {
 function changedata() {
   //改数据
   $.ajax({
-    url: "http://10.36.149.95:8080/wb2/interface/changewb.php",
+    url: "http://localhost/wb2/interface/changewb.php",
     data: {
       id: "3",
       num: "50"
